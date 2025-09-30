@@ -1,0 +1,161 @@
+========================================
+FASSTVIDEO INSTALLATION GUIDE
+========================================
+
+QUICK START
+-----------
+1. Locate the "FasstVideo" folder
+2. Double-click "FasstVideo.exe"
+3. Accept the legal disclaimer
+4. Start downloading videos!
+
+DETAILED INSTALLATION
+---------------------
+
+STEP 1: EXTRACT OR COPY
+   - If you received a ZIP file, extract it first
+   - Copy the entire "FasstVideo" folder to your desired location
+   - Recommended: C:\Program Files\FasstVideo or C:\Users\[YourName]\FasstVideo
+   - Do NOT separate files from the folder
+
+STEP 2: FIRST RUN
+   - Navigate to the FasstVideo folder
+   - Find "FasstVideo.exe"
+   - Double-click to launch
+
+   Windows SmartScreen Warning:
+   - If you see "Windows protected your PC"
+   - Click "More info"
+   - Click "Run anyway"
+   - This is normal for unsigned applications
+
+STEP 3: LEGAL DISCLAIMER
+   - Read the legal disclaimer carefully
+   - Check "Remember my choice" if you want to skip it next time
+   - Click "Accept" to continue
+
+STEP 4: FIRST DOWNLOAD
+   - The application will check for dependencies
+   - Any missing components will be auto-installed
+   - This may take a few minutes on first run
+   - You'll see status messages in the event log
+
+TRANSFERRING TO ANOTHER PC
+---------------------------
+
+METHOD 1: USB DRIVE
+   1. Copy the entire "FasstVideo" folder to a USB drive
+   2. Plug USB into target PC
+   3. Copy folder to target PC
+   4. Run FasstVideo.exe
+
+METHOD 2: NETWORK SHARE
+   1. Copy FasstVideo folder to network location
+   2. Access from target PC
+   3. Copy to local drive
+   4. Run FasstVideo.exe
+
+METHOD 3: CLOUD STORAGE
+   1. Upload FasstVideo folder to Dropbox/OneDrive/Google Drive
+   2. Download on target PC
+   3. Extract if compressed
+   4. Run FasstVideo.exe
+
+IMPORTANT NOTES
+---------------
+- Keep all files together in the FasstVideo folder
+- Don't delete or move files from the _internal folder
+- The application is portable - no Windows installation needed
+- Settings are stored in: C:\Users\[YourName]\.fasstvideo_settings.json
+
+SYSTEM REQUIREMENTS
+-------------------
+- Windows 10 or higher (64-bit)
+- Minimum 500 MB free disk space
+- Internet connection
+- 4GB RAM recommended
+- Chrome or Firefox browser (optional, for advanced features)
+
+CREATING A DESKTOP SHORTCUT
+----------------------------
+1. Right-click on FasstVideo.exe
+2. Select "Send to" > "Desktop (create shortcut)"
+3. Rename shortcut to "FasstVideo" if desired
+
+CREATING A START MENU ENTRY
+----------------------------
+1. Right-click on FasstVideo.exe
+2. Select "Pin to Start"
+   OR
+1. Copy FasstVideo.exe shortcut
+2. Paste into: C:\ProgramData\Microsoft\Windows\Start Menu\Programs
+
+TROUBLESHOOTING
+---------------
+
+Problem: Application won't start
+Solution:
+   - Check that all files are present
+   - Run as administrator
+   - Check antivirus settings
+   - Reinstall Visual C++ Redistributable
+
+Problem: "DLL not found" error
+Solution:
+   - Make sure _internal folder is intact
+   - Don't separate files from main folder
+   - Re-copy from original source
+
+Problem: Downloads fail
+Solution:
+   - Check internet connection
+   - Verify video URL is accessible
+   - Check event logs for errors
+   - Some content may be protected
+
+Problem: SmartScreen blocks execution
+Solution:
+   - Click "More info"
+   - Click "Run anyway"
+   - Add to antivirus exceptions if needed
+
+ANTIVIRUS FALSE POSITIVES
+--------------------------
+Some antivirus software may flag the executable as suspicious.
+This is a false positive due to:
+   - PyInstaller bundled executables
+   - Network communication features
+   - Browser automation capabilities
+
+To resolve:
+   - Add FasstVideo folder to antivirus exceptions
+   - Submit file to antivirus vendor as false positive
+   - Use Windows Defender (usually fewer false positives)
+
+UPDATING
+--------
+To update to a newer version:
+   1. Download new version
+   2. Close old FasstVideo if running
+   3. Delete old FasstVideo folder
+   4. Copy new FasstVideo folder to same location
+   5. Your settings will be preserved
+
+UNINSTALLING
+------------
+To remove FasstVideo:
+   1. Delete the FasstVideo folder
+   2. Delete: C:\Users\[YourName]\.fasstvideo_settings.json (optional)
+   3. Delete your downloads folder (optional)
+
+No registry entries or system files to clean up!
+
+GETTING HELP
+------------
+If you encounter issues:
+   1. Check the event logs in the application
+   2. Read error messages carefully
+   3. Ensure you're using latest version
+   4. Check README.txt for additional info
+
+========================================

@@ -1,0 +1,58 @@
+═══════════════════════════════════════
+    FASSTVIDEO - QUICK START GUIDE
+═══════════════════════════════════════
+
+📁 STEP 1: LOCATE THE APPLICATION
+   • Find the "FasstVideo" folder
+   • Do not separate or delete any files
+
+🚀 STEP 2: LAUNCH
+   • Open the FasstVideo folder
+   • Double-click "FasstVideo.exe"
+
+⚠️ STEP 3: WINDOWS SMARTSCREEN (if shown)
+   • Click "More info"
+   • Click "Run anyway"
+
+✅ STEP 4: ACCEPT DISCLAIMER
+   • Read the legal terms
+   • Check "Remember my choice" (optional)
+   • Click "Accept"
+
+🎬 STEP 5: START DOWNLOADING
+   • Paste video URL in the text field
+   • Choose download folder
+   • Click "Download"
+   • Watch progress in real-time!
+
+═══════════════════════════════════════
+
+📦 TRANSFERRING TO ANOTHER PC?
+
+   1. Copy entire "FasstVideo" folder
+   2. Transfer via USB/Network/Cloud
+   3. No installation needed!
+   4. Just run FasstVideo.exe
+
+═══════════════════════════════════════
+
+❓ NEED MORE HELP?
+
+   • README.txt - Full documentation
+   • INSTALLATION_GUIDE.txt - Detailed steps
+   • Event logs in app - Real-time diagnostics
+
+═══════════════════════════════════════
+
+✨ FEATURES
+   ✓ Real-time progress tracking
+   ✓ Automatic retries
+   ✓ Multiple download methods
+   ✓ Browser automation
+   ✓ Modern animated interface
+
+═══════════════════════════════════════
+
+That's it! Enjoy FasstVideo! 🎉
+
+═══════════════════════════════════════
