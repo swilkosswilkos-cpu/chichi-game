@@ -1,0 +1,21 @@
+*.iml
+.gradle
+/local.properties
+# iOS Xcode
+assets/ChichiGame-iOS/ChichiGame.xcodeproj/xcuserdata/
+assets/ChichiGame-iOS/build/
+# iOS Xcode user data only
+assets/ChichiGame-iOS/ChichiGame.xcodeproj/xcuserdata/
+assets/ChichiGame-iOS/build/
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties

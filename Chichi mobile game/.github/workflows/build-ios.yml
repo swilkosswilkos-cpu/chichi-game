@@ -1,0 +1,47 @@
+name: Build iOS IPA
+
+on:
+  push:
+    paths:
+      - 'assets/ChichiGame-iOS/**'
+  workflow_dispatch:   # lets you trigger manually from GitHub website
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Build app (unsigned)
+        run: |
+          xcodebuild \
+            -project "assets/ChichiGame-iOS/ChichiGame.xcodeproj" \
+            -scheme ChichiGame \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -archivePath "$RUNNER_TEMP/ChichiGame.xcarchive" \
+            archive \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Package as IPA
+        run: |
+          APP_PATH=$(find "$RUNNER_TEMP/ChichiGame.xcarchive" -name "*.app" | head -1)
+          mkdir -p "$RUNNER_TEMP/Payload"
+          cp -r "$APP_PATH" "$RUNNER_TEMP/Payload/"
+          cd "$RUNNER_TEMP"
+          zip -r ChichiGame.ipa Payload/
+          echo "IPA created: $(du -sh ChichiGame.ipa)"
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: ChichiGame-iOS
+          path: ${{ runner.temp }}/ChichiGame.ipa
+          retention-days: 30
